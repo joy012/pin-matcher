@@ -1,4 +1,4 @@
-// generate random pin 
+// generate random pin and button click handler
 document.querySelector('.pin-generator button').addEventListener('click',function(){
     document.getElementsByClassName('notify')[0].style.display = 'none';
     document.getElementsByClassName('notify')[1].style.display = 'none';
@@ -18,7 +18,7 @@ for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click',function(){
         let input = document.querySelector('.input-section input').value;
         input += btn[i].innerText;
-        if(input.length === 5){
+        if(input.length > 4){
             input +='';
         }
         else{
