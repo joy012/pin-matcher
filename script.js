@@ -58,6 +58,7 @@ document.querySelector('.submit-btn').addEventListener('click', function(){
     else if(pin !== '' && input!== ''){
         if(pin === input){
             document.querySelector('.submit-btn').disabled = true;
+            document.getElementById('not-matched').style.display = 'none';
             document.getElementById('matched').style.display = 'block';
             document.getElementById('warning').style.display = 'none';
         }
